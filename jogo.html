@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- OLÁ! TUDO BEM? Aqui é Rodolfo Barreto, e esse é o meu código. Sinta-se livre para mandar sugestões, críticas ou qualquer coisa. Meu e-mail é rodolfobarreto92@gmail.com. Abraços! -->
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simulador de dinâmica populacional I</title>
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ovo&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Simulador de Dinâmica Populacional I</h1>
+    </header>
+    <hr>
+    <nav>
+        <ul>
+            <li><a href="http://edujogos.com.br/">Página Inicial</a>
+            </li>
+            <li><a href="index.html">Instruções</a>
+            </li>
+            <li><a href="jogo.html">Jogue agora!</a>
+            </li>
+        </ul>
+    </nav>
+    <hr>
+    <content>
+        <div class="lateral">
+            <div>
+                <p>Este é o Simulador de Dinâmica Populacional I (SDP-I). Antes de tudo, é importante que você leia as
+                    instruções <a href="" target="_blank">nesta página</a>. O objetivo do SDP-I é mostrar a dinâmica de
+                    frequência genética para dois alelos de um mesmo gene. Aqui você pode definir a quantidade inicial
+                    de cada genótipo: homozigoto dominante (AA), heterozigoto (Aa) e homozigoto recessivo (aa). Se
+                    ocorrer encontro entre dois indivíduos, são gerados descendentes de acordo com as possibilidades de
+                    cruzamento.</p><br><br>
+                <p>Frequência inicial de AA:</p>
+                <form>
+                    <select id="frequenciaInicialAA">
+                        <option value="0">0</option>
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </form><br>
+                <p>Frequência inicial de Aa:</p>
+                <form>
+                    <select id="frequenciaInicialAa">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2" selected>2</option>
+                        <option value="3">3</option>
+                    </select>
+                </form><br>
+                <p>Frequência inicial de aa:</p>
+                <form>
+                    <select id="frequenciaInicialaa">
+                        <option value="0">0</option>
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </form><br><br>
+
+                <center><button type="button" onclick="Zerar(); Inicio(); Update();">INICIAR
+                        SIMULAÇÃO</button></center>
+                <br><br><br>
+                <hr>
+                <p>Para melhorar a jogabilidade, você pode ajustar algumas variáveis do SDP-I. Caso ocorra algum erro,
+                    tente reiniar a página para restaurar os valores iniciais.</p>
+                <p>Obs.: Para valores decimais, utilize ponto ao invés de vírgula!</p>
+                <p>Velocidade dos indivíduos: </p><input type="text" id="velocidade" value="100.0">
+                <p>Intervalo entre movimentos: </p><input type="text" id="intervalo" value="1.0">
+                <br>
+                <center><button type="button" onclick="DefinirValores();">Definir valores</button></center>
+
+
+                <!-- apagar depois -->
+                <br><br><br><br><br><input type="text" id="nome">
+                <!-- até aqui -->
+
+
+
+
+
+            </div>
+        </div>
+        <div class="jogo">
+            <center><canvas class="canvas1">
+                    <script src="canvas.js"></script>
+                </canvas></center>
+
+            <center><canvas class="canvas2">
+                    <script src="canvas.js"></script>
+                </canvas></center>
+
+        </div>
+    </content>
+</body>
+
+</html>

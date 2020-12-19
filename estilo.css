@@ -1,0 +1,148 @@
+body {
+    background: linear-gradient(to bottom right, #ebebeb 0%, #0099ff 100%) no-repeat;
+    min-height: 100vh;
+    margin: 0 1%
+}
+
+hr {
+    height: 1px;
+    background-color: black;
+    opacity: 0.1;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Cinzel";
+    font-size: xx-large;
+    margin-top: 2%;
+}
+
+h2 {
+    text-indent: 3%;
+    font-family: "Cinzel";
+    font-size: larger;
+    text-decoration: underline;
+    margin: 1% 0;
+}
+
+p {
+    margin: 0 2% 0.5%;
+    font-family: "Ovo";
+    text-align: justify;
+    font-size: medium;
+    display: inline-block;
+}
+
+nav {
+    margin: 1% 20%;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav li {
+    font-family: "Cinzel";
+    font-size: larger;
+    padding: 1%;
+    background: rgba(78, 160, 228, 0.2);
+    border-radius: 100px;
+    transition: all 1s;
+}
+
+nav li:hover {
+    box-shadow: inset 0 0 0 5px rgba(78, 160, 228, 1);
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 900px), (orientation: portrait) {
+    nav ul {
+        display: inline;
+        justify-content: space-evenly;
+    }
+    nav li {
+        margin: 1% 0;
+        font-size: large;
+    }
+}
+
+content {
+    margin: 1%;
+}
+
+content figure {
+    max-width: 30%;
+    margin: 0% 1%;
+    padding: 1%;
+    border: solid rgba(23, 0, 128, 0.01);
+    border-radius: 10%;
+    text-align: center;
+}
+
+content figure img {
+    width: 95%;
+    border: solid rgba(23, 0, 128, 0.1);
+    border-radius: 10%;
+}
+
+.imgesquerda {
+    float: left;
+    clear: left;
+}
+
+.imgdireita {
+    float: right;
+    clear: right;
+}
+
+figcaption {
+    background-color: rgba(23, 0, 128, 0.1);
+    border-radius: 50px;
+    margin: 0 5%;
+    padding: 2px;
+    text-align: center;
+    color: white;
+    font-family: "Ovo";
+    font-size: medium;
+}
+
+.lateral {
+    /* background-color: red; */
+    width: 35%;
+    border-right: solid 2px;
+    float: left;
+}
+
+form {
+    display: inline;
+}
+
+.jogo {
+    width: 60%;
+    float: left;
+}
+
+.canvas1 {
+    border: solid 1px;
+    margin: 0 2.5%;
+    width: 100%;
+    background-color: #dacece;
+}
+
+.canvas2 {
+    border: solid 1px;
+    margin: 0 2.5%;
+    width: 100%;
+    height: 100px;
+}
+
+button {
+    background-color: rgba(190, 190, 190, 0.5);
+    border-radius: 15px;
+}
